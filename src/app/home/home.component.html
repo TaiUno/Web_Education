@@ -1,0 +1,75 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div class="logo_header">
+    <a href="#">
+      <img
+        width="40"
+        alt="Angular Logo"
+        src="../../assets/images/logo-physics.png"
+      />
+    </a>
+
+    <h4 class="logo_title">Vật lý</h4>
+  </div>
+  <nav aria-label="primary">
+    <ul class="menu">
+      <li class="menu_item"><a href="" class="item_content">Trang chủ</a></li>
+      <li class="menu_item"><a href="" class="item_content">Quản lý</a></li>
+      <li class="menu_item">
+        <a href="" class="item_content">Nhóm học tập</a>
+      </li>
+      <li class="menu_item"><a href="" class="item_content">Bài tập</a></li>
+      <li class="menu_item"><a href="" class="item_content">Thư viện</a></li>
+      <li class="menu_item"><a href="" class="item_content">Liên hệ</a></li>
+    </ul>
+  </nav>
+  <div class="flex_center">
+    <div class="search_string flex_center">
+      <div class="search_icon"></div>
+      <input type="text" spellcheck="false" placeholder="Nhập tìm kiếm..." />
+    </div>
+  </div>
+  <div class="acc_infos flex_center">
+    <div class="login flex_center" *ngIf="true">
+      <div class="bell"></div>
+      <div class="account" [ngStyle]="acc_img"></div>
+    </div>
+    <div class="logout" *ngIf="false">
+      <button>Đăng nhập</button>
+    </div>
+  </div>
+</div>
+<div class="container"></div>
+<footer>
+  Love Angular?&nbsp;
+  <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
+    Give our repo a star.
+    <div class="github-star-badge">
+      <svg
+        class="material-icons"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        />
+      </svg>
+      Star
+    </div>
+  </a>
+  <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
+    <svg
+      class="material-icons"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+    >
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#1976d2" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </svg>
+  </a>
+</footer>

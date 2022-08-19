@@ -1,0 +1,211 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #e8ebed;
+    font-weight: 600;
+    font-size: 18px;
+
+  }
+
+  .toolbar div img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+  // Logo header
+.logo_header{
+  display: flex;
+  align-items: center;
+}
+
+.logo_title{
+  &::after{
+    content: '';
+    margin-left: 10px;
+    border-right: 1px solid #e8ebed;
+  }
+}
+
+// Menu header
+.menu{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: auto;
+    
+  li.menu_item{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    a.item_content{
+      text-decoration: none;
+      padding: 10px 10px;
+      color: #333;
+
+      &:hover{
+        background: rgb(193, 169, 169);
+        border-radius: 10px;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+// Search header
+.search_string{
+  width: 300px;
+  border: 2px solid #e8e8e8;
+  border-radius: 20px;
+  padding: 0 16px 0 8px;
+
+  input{
+    border: none;
+    height: 40px;
+    flex: 1 1;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  .search_icon{
+    cursor: pointer;
+    background-image: url(../../assets/images/search-line-icon.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.8;
+    width: 30px;
+    height: 40px;
+  }
+} 
+
+// account informations
+.acc_infos .login{
+  .bell{
+    cursor: pointer;
+    background-image: url(../../assets/images/bell-line-icon.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.8;
+    width: 30px;
+    height: 40px;
+  }
+
+  .account{
+    cursor: pointer;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #24292e;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+
+}
+ 
+
+/* container */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* footer */
+footer {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e8ebed;
+  }
+
+footer a {
+display: flex;
+align-items: center;
+}
+
+svg.material-icons {
+height: 24px;
+width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+margin-right: 8px;
+}
+
+.github-star-badge {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    margin-left: 4px;
+    font-weight: 600;
+  }
+
+.github-star-badge:hover {
+background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+border-color: rgba(27,31,35,.35);
+background-position: -.5em;
+}
+
+.github-star-badge .material-icons {
+height: 16px;
+width: 16px;
+margin-right: 4px;
+}
